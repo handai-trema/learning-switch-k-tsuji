@@ -1,4 +1,4 @@
-#Report: cbench
+#Report: learning-switch
 Submission: Oct./12/2016  
 
 ##提出者
@@ -6,10 +6,9 @@ Submission: Oct./12/2016
 33E16012  
 長谷川研究室 所属  
 
-##回答
-下記の結果を得た.
-そして,totalより,toplevelにかかる時間が最も長いことが判明した.
+##全体像
+trema.confより全体像は下図の通りであることがわかった．  
 
 
 ##関連リンク
-* [/lib/github] (https://github.com/handai-trema/learning-switch-k-tsuji/blob/master/lib/learning_switch.rb)
+None
