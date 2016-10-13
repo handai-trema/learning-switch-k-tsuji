@@ -14,7 +14,7 @@ Submission: Oct./12/2016
 <img src="img/NetworkStructure.png" width="500px">  
 
 
-|![]()img/NetworkStructure.png|  
+|![NetworkStructure](img/NetworkStructure.png)|  
 |-----------------------------|  
 |              Fig            |  
 
