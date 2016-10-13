@@ -8,7 +8,8 @@ Submission: Oct./12/2016
 
 ##構造
 `trema.multi.conf`より，SDNの構造はFig.1になった．  
-![NetworkStructure](img/NetworkStructure.png　"これはテスト画像"){: width="320"}  
+![NetworkStructure](img/NetworkStructure.png　"これはテスト画像")
+{: width="320"}  
 
 
 ##関連リンク
