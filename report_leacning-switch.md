@@ -8,12 +8,12 @@ Submission: Oct./12/2016
 
 ##構造
 'trema.multi.conf'より，SDNの構造はFig.1になった．
-<center>
+<CENTER>
 <figure id="Fig.1">
 <img src="https://github.com/handai-trema/learning-switch-k-tsuji/blob/master/img/NetworkStructure.png" width="500px">  
 <figcaption>Fig.1</figcaption>  
 </figure>
-</center>
+</CENTER>
 
 
 ##関連リンク
