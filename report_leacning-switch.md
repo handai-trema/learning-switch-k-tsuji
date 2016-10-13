@@ -7,9 +7,9 @@ Submission: Oct./12/2016
 長谷川研究室 所属  
 
 ##構造
-`trema.multi.conf`より，SDNの構造はFig.1になった．
+`trema.multi.conf`より，SDNの構造はFig.1になった．  
 |![NetworkStructure](https://github.com/handai-trema/learning-switch-k-tsuji/blob/master/img/NetworkStructure.png)|
-|--------------------------|
+|:---------------:|
 |Fig.1|
 
 
