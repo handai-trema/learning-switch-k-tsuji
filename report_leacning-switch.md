@@ -8,7 +8,7 @@ Submission: Oct./12/2016
 
 ##構造
 'trema.multi.conf'より，SDNの構造は
-![全体像](http://i.imgur.com/Jjwsc.jpg)
+![Network Structure](https://github.com/handai-trema/learning-switch-k-tsuji/blob/master/img/NetworkStructure.png)
 となった．
 
 
