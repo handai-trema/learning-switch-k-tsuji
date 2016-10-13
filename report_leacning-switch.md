@@ -11,7 +11,7 @@ Submission: Oct./12/2016
 <CENTER>
 <figure id="Fig.1">
 <img src="https://github.com/handai-trema/learning-switch-k-tsuji/blob/master/img/NetworkStructure.png" width="500px">  
-<figcaption>Fig.1</figcaption>  
+  <figcaption>Fig.1</figcaption>  
 </figure>
 </CENTER>
 
