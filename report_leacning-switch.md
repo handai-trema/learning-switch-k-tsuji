@@ -6,9 +6,11 @@ Submission: Oct./12/2016
 33E16012  
 長谷川研究室 所属  
 
-##全体像
-trema.confより全体像は下図の通りであることがわかった．  
+##構造
+'trema.multi.conf'より，SDNの構造は
+![全体像](http://i.imgur.com/Jjwsc.jpg)
+となった．
 
 
 ##関連リンク
-None
+* [Result of profile] (https://raw.githubusercontent.com/handai-trema/cbench-k-tsuji/master/profile_cbench.txt)
