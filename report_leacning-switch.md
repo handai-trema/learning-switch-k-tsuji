@@ -9,7 +9,7 @@ Submission: Oct./12/2016
 
 
 ## SDNの構造
-[trema.multi.conf](trema.multi.conf)より，  
+`[trema.multi.conf](trema.multi.conf)`より，  
 SDNの構造はFig.1の通りになった．  
 
 |<img src="img/NetworkStructure.png" width="500px">|  
@@ -23,7 +23,7 @@ SDNの構造はFig.1の通りになった．
 １つのスイッチ（今回はlsw1）に対して下記２つのことを行った．
 
 ###１．プログラムの解読
-lib/multi_learnig_switch.rb[lib/multi_learnig_switch.rb]より，
+`lib/multi_learnig_switch.rb[lib/multi_learnig_switch.rb]`より，
 
 ###２．確認
 lsw1において，下表のようにでパケット送り合う．  
