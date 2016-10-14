@@ -51,10 +51,11 @@ FDBから宛先のMACアドレスおよび宛先につながるポート番号�
 
 
 ###２．確認
-lsw1において，下表のようにでパケット送り合う．  
+`１．`を実証するため，  
+lsw1において，下表の通りにパケットを送り合わせて見た．  
 
-| 実行順 |  送信者  |   受信者    |                      イメージ                    |直後のフローテーブル|  
-|:-----:|:-------:|:----------:|:-----------------------------------------------:|:---------------|  
+| 実行順 |  送信者  |   受信者    |                      イメージ                    |解釈|直後のフローテーブル|  
+|:-----:|:-------:|:----------:|:-----------------------------------------------:|:------|:---------------|  
 |   1   | host1-1 |  host1-1   |<img src="img/host1-1_host1-2.png" width="320px">|cookie=0x0, duration=7.658s, table=0, n_packets=0, n_bytes=0, idle_age=7, priority=65535,udp,in_port=1,vlan_tci=0x0000,dl_src=dd:36:82:ff:45:88,dl_dst=dd:36:82:ff:45:88,nw_src=192.168.0.1,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:1|  
 |   2   | host1-2 |  host1-2   |<img src="img/host1-1_host1-2.png" width="320px">|<P>cookie=0x0, duration=18.921s, table=0, n_packets=0, n_bytes=0, idle_age=18, priority=65535,udp,in_port=2,vlan_tci=0x0000,dl_src=cb:95:96:e6:9d:03,dl_dst=cb:95:96:e6:9d:03,nw_src=192.168.0.2,nw_dst=192.168.0.2,nw_tos=0,tp_src=0,tp_dst=0 actions=output:2</P><P>cookie=0x0, duration=38.093s, table=0, n_packets=0, n_bytes=0, idle_age=38, priority=65535,udp,in_port=1,vlan_tci=0x0000,dl_src=dd:36:82:ff:45:88,dl_dst=dd:36:82:ff:45:88,nw_src=192.168.0.1,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:1</P>|  
 |   3   | host1-1 |  host1-1   |<img src="img/host1-2_host1-1.png" width="320px">|<P>cookie=0x0, duration=5.949s, table=0, n_packets=0, n_bytes=0, idle_age=5, priority=65535,udp,in_port=1,vlan_tci=0x0000,dl_src=dd:36:82:ff:45:88,dl_dst=cb:95:96:e6:9d:03,nw_src=192.168.0.1,nw_dst=192.168.0.2,nw_tos=0,tp_src=0,tp_dst=0 actions=output:2<P><P>cookie=0x0, duration=54.431s, table=0, n_packets=0, n_bytes=0, idle_age=54, priority=65535,udp,in_port=2,vlan_tci=0x0000,dl_src=cb:95:96:e6:9d:03,dl_dst=cb:95:96:e6:9d:03,nw_src=192.168.0.2,nw_dst=192.168.0.2,nw_tos=0,tp_src=0,tp_dst=0 actions=output:2</P><P>cookie=0x0, duration=73.603s, table=0, n_packets=0, n_bytes=0, idle_age=73, priority=65535,udp,in_port=1,vlan_tci=0x0000,dl_src=dd:36:82:ff:45:88,dl_dst=dd:36:82:ff:45:88,nw_src=192.168.0.1,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:1</P>|  
