@@ -55,54 +55,46 @@ FDBから宛先のMACアドレスおよび宛先につながるポート番号�
 lsw1において，下記の順でパケットを送り合わせて見た．  
 
 ####送信１
-*送信者：*  
-host1-1  
-*受信者：*  
-host1-1  
+<b>送信者：</b> host1-1  
+<b>受信者：</b> host1-1  
 <P><img src="img/host1-1*host1-1.png" width="320px"></P>
-*結果の解釈：*
-<P>この処理によってFDBにhost1-1のMACアドレスおよびポート番号（１）が登録された．そして，フローテーブルにおいて，入力パケットに対してはポート1へ出力する規則が生成された．</P>
-*直後フローテーブル：*  
+<b>直後フローテーブル：</b>  
 <P>cookie=0x0, duration=7.658s, table=0, n*packets=0, n*bytes=0, idle*age=7, priority=65535,udp,in*port=1,vlan*tci=0x0000,dl*src=dd:36:82:ff:45:88,dl*dst=dd:36:82:ff:45:88,nw*src=192.168.0.1,nw*dst=192.168.0.1,nw*tos=0,tp*src=0,tp*dst=0 actions=output:1</P>
+<b>結果の解釈：</b>
+<P>この処理によってFDBにhost1-1のMACアドレスおよびポート番号（１）が登録された．そして，フローテーブルにおいて，入力パケットに対してはポート1へ出力する規則が生成された．</P>
 
 ####送信２
-*送信者：*  
-host1-2  
-*受信者：*  
-host1-2  
+<b>送信者：</b> host1-2  
+<b>受信者：</b> host1-2  
 <P><img src="img/host1-2*host1-2.png" width="320px"></P>
-*結果の解釈：*
-<P>FDBにhost1-2のMACアドレスおよびポート番号（２）が登録された．そして，フローテーブルにおいて，入力パケットに対してはポート1へ出力する規則が生成された．</P>
-*直後フローテーブル：*  
+<b>直後フローテーブル：</b>  
 <P>cookie=0x0, duration=18.921s, table=0, n*packets=0, n*bytes=0, idle*age=18, priority=65535,udp,in*port=2,vlan*tci=0x0000,dl*src=cb:95:96:e6:9d:03,dl*dst=cb:95:96:e6:9d:03,nw*src=192.168.0.2,nw*dst=192.168.0.2,nw*tos=0,tp*src=0,tp*dst=0 actions=output:2</P>
 <P>cookie=0x0, duration=38.093s, table=0, n*packets=0, n*bytes=0, idle*age=38, priority=65535,udp,in*port=1,vlan*tci=0x0000,dl*src=dd:36:82:ff:45:88,dl*dst=dd:36:82:ff:45:88,nw*src=192.168.0.1,nw*dst=192.168.0.1,nw*tos=0,tp*src=0,tp*dst=0 actions=output:1</P>
+<b>結果の解釈：</b>
+<P>FDBにhost1-2のMACアドレスおよびポート番号（２）が登録された．そして，フローテーブルにおいて，入力パケットに対してはポート1へ出力する規則が生成された．</P>
 
 ####送信3
-*送信者：*  
-host1-1  
-*受信者：*  
-host1-2  
+<b>送信者：</b> host1-1  
+<b>受信者：</b> host1-2  
 <P><img src="img/host1-1*host1-2.png" width="320px"></P>
-*結果の解釈：*  
-<P>フローテーブルにおいて，入力パケットに対してはポート2へ出力する規則が生成された．</P>
-*直後フローテーブル：*  
+<b>直後フローテーブル：</b>  
 <P>cookie=0x0, duration=5.949s, table=0, n*packets=0, n*bytes=0, idle*age=5, priority=65535,udp,in*port=1,vlan*tci=0x0000,dl*src=dd:36:82:ff:45:88,dl*dst=cb:95:96:e6:9d:03,nw*src=192.168.0.1,nw*dst=192.168.0.2,nw*tos=0,tp*src=0,tp*dst=0 actions=output:2</P>
 <P>cookie=0x0, duration=54.431s, table=0, n*packets=0, n*bytes=0, idle*age=54, priority=65535,udp,in*port=2,vlan*tci=0x0000,dl*src=cb:95:96:e6:9d:03,dl*dst=cb:95:96:e6:9d:03,nw*src=192.168.0.2,nw*dst=192.168.0.2,nw*tos=0,tp*src=0,tp*dst=0 actions=output:2</P>
 <P>cookie=0x0, duration=73.603s, table=0, n*packets=0, n*bytes=0, idle*age=73, priority=65535,udp,in*port=1,vlan*tci=0x0000,dl*src=dd:36:82:ff:45:88,dl*dst=dd:36:82:ff:45:88,nw*src=192.168.0.1,nw*dst=192.168.0.1,nw*tos=0,tp*src=0,tp*dst=0 actions=output:1</P>
+<b>結果の解釈：</b>  
+<P>フローテーブルにおいて，入力パケットに対してはポート2へ出力する規則が生成された．</P>
 
 ####送信4
-*送信者：*  
-host1-2  
-*受信者：*  
-host1-1  
+<b>送信者：</b>  host1-2  
+<b>受信者：</b>  host1-1  
 <P><img src="img/host1-2*host1-1.png" width="320px"></P>
-*結果の解釈：*  
-<P>フローテーブルにおいて，入力パケットに対してはポート2へ出力する規則が生成された．</P>
-*直後フローテーブル：*    
+<b>直後フローテーブル：</b>    
 <P>cookie=0x0, duration=6.857s, table=0, n*packets=0, n*bytes=0, idle*age=6, priority=65535,udp,in*port=2,vlan*tci=0x0000,dl*src=cb:95:96:e6:9d:03,dl*dst=dd:36:82:ff:45:88,nw*src=192.168.0.2,nw*dst=192.168.0.1,nw*tos=0,tp*src=0,tp*dst=0 actions=output:1</P>
 <P>cookie=0x0, duration=31.096s, table=0, n*packets=0, n*bytes=0, idle*age=31, priority=65535,udp,in*port=1,vlan*tci=0x0000,dl*src=dd:36:82:ff:45:88,dl*dst=cb:95:96:e6:9d:03,nw*src=192.168.0.1,nw*dst=192.168.0.2,nw*tos=0,tp*src=0,tp*dst=0 actions=output:2</P>
 <P>cookie=0x0, duration=79.578s, table=0, n*packets=0, n*bytes=0, idle*age=79, priority=65535,udp,in*port=2,vlan*tci=0x0000,dl*src=cb:95:96:e6:9d:03,dl*dst=cb:95:96:e6:9d:03,nw*src=192.168.0.2,nw*dst=192.168.0.2,nw*tos=0,tp*src=0,tp*dst=0 actions=output:2</P>
 <P>cookie=0x0, duration=98.75s, table=0, n*packets=0, n*bytes=0, idle*age=98, priority=65535,udp,in*port=1,vlan*tci=0x0000,dl*src=dd:36:82:ff:45:88,dl*dst=dd:36:82:ff:45:88,nw*src=192.168.0.1,nw*dst=192.168.0.1,nw*tos=0,tp*src=0,tp*dst=0 actions=output:1</P>
+<b>結果の解釈：</b>
+<P>フローテーブルにおいて，入力パケットに対してはポート2へ出力する規則が生成された．</P>
 
 
 
