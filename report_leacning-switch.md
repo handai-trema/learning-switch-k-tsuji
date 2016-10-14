@@ -35,10 +35,10 @@ SDNの構造はFig.1の通りになった．
 fdbへ送信車のMACアドレス，入力ポート番号（Entry）を登録する．    
 このとき，FDBに入力Entryがあれば，ポート番号（現時刻も）を更新する．  
 そして，FDBに入力Entryがなければ，新しくEntryを作り，FDBに格納する．
-ちなみに，FDB.age()を呼び出せば，最大時間（age_max: 300）を超えたエントリーはFDBから排除される．    
->参考：
-> * packet_in()  
-> * FDB.learn()  
+ちなみに，FDB.age()を呼び出せば，最大時間（age_max: 300）を超えたエントリーはFDBから排除される．  
+>参照：
+> * [MultiLearningSwitch.packet_in()](lib/multi_learnig_switch.rb)  
+> * [FDB.learn()](lib/fdb.rb)  
 
 ####② フローテーブルの規則を生成
 FDBから宛先のMACアドレスおよび宛先につながるポート番号（Entry）を取得する．  
