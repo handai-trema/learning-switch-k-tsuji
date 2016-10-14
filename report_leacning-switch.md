@@ -36,8 +36,9 @@ fdbへ送信車のMACアドレス，入力ポート番号（Entry）を登録す
 このとき，FDBに入力Entryがあれば，ポート番号（現時刻も）を更新する．  
 そして，FDBに入力Entryがなければ，新しくEntryを作り，FDBに格納する．
 ちなみに，FDB.age()を呼び出せば，最大時間（age_max: 300）を超えたエントリーはFDBから排除される．    
->packet_in()
->FDB.learn()
+>参考：
+> * packet_in()  
+> * FDB.learn()  
 
 ####② フローテーブルの規則を生成
 FDBから宛先のMACアドレスおよび宛先につながるポート番号（Entry）を取得する．  
