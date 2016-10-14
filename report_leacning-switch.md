@@ -33,7 +33,7 @@ lsw1において，下表のようにでパケット送り合う．
 |:-----:|:-------:|:----------:|:-----------------------------------------------:|:--------------|  
 |   1   | host1-1 |  host1-2   |<img src="img/host1-1_host1-2.png" width="320px">|None           |  
 |   2   | host1-1 |  host1-2   |<img src="img/host1-1_host1-2.png" width="320px">|None           |  
-|   3   | host1-2 |  host1-1   |<img src="img/host1-2_host1-1.png" width="320px">|cookie=0x0, duration=12.917s, table=0, n_packets=0, n_bytes=0, idle_age=12, priority=65535,udp,in_port=2,vlan_tci=0x0000,dl_src=fe:cf:9f:34:01:de,dl_dst=d9:7e:76:8d:10:25,nw_src=192.168.0.2,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:1<br>|  
+|   3   | host1-2 |  host1-1   |<img src="img/host1-2_host1-1.png" width="320px">|cookie=0x0, duration=12.917s, table=0, n_packets=0, n_bytes=0, idle_age=12, priority=65535,udp,in_port=2,vlan_tci=0x0000,dl_src=fe:cf:9f:34:01:de,dl_dst=d9:7e:76:8d:10:25,nw_src=192.168.0.2,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:1|  
 |   4   | host1-1 |  host1-2   |<img src="img/host1-1_host1-2.png" width="320px">|cookie=0x0, duration=45.867s, table=0, n_packets=0, n_bytes=0, idle_age=45, priority=65535,udp,in_port=1,vlan_tci=0x0000,dl_src=d9:7e:76:8d:10:25,dl_dst=fe:cf:9f:34:01:de,nw_src=192.168.0.1,nw_dst=192.168.0.2,nw_tos=0,tp_src=0,tp_dst=0 actions=output:2<br>
 cookie=0x0, duration=79.714s, table=0, n_packets=0, n_bytes=0, idle_age=79,priority=65535,udp,in_port=2,vlan_tci=0x0000,dl_src=fe:cf:9f:34:01:de,dl_dst=d9:7e:76:8d:10:25,nw_src=192.168.0.2,nw_dst=192.168.0.1,nw_tos=0,tp_src=0,tp_dst=0 actions=output:1|  
 
