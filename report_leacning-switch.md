@@ -37,7 +37,7 @@ fdbへ送信車のMACアドレス，入力ポート番号（Entry）を登録す
 そして，FDBに入力Entryがなければ，新しくEntryを作り，FDBに格納する．
 ちなみに，FDB.age()を呼び出せば，最大時間（age_max: 300）を超えたエントリーはFDBから排除される．  
 >参照：
-> * [MultiLearningSwitch.packet_in()](lib/multi_learnig_switch.rb)  
+> * [MultiLearningSwitch.packet_in()](lib/multi_learning_switch.rb)  
 > * [FDB.learn()](lib/fdb.rb)  
 
 ####② フローテーブルの規則を生成
