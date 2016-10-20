@@ -17,11 +17,10 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
 
 ##ソースコードの解読
 [lib/learning_switch13.rb](lib/learning_switch13.rb)
-より，下記２つのテーブルが設定されていることがわかった．
+より，下記２つのフローテーブルが設定されていることがわかった．
 
-<table>
-  <center>
-  <caption>INGRESS_FILTERING_TABLE</caption>
+<table　align="center">
+  <center><caption>INGRESS_FILTERING_TABLE</caption><center>
   <tr>
     <td>優先度</td>
     <td>メソッド名</td>
@@ -42,7 +41,6 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
     <td>add_default_forwarding_flow_entry</td>
     <td>その他FORWARDING_TABLEへ</td>
   </tr>
-  <center>
 </table>
 
 
