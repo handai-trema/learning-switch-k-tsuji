@@ -64,6 +64,12 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
 </table>
 
 
+##構造
+今回は，独自の構造を
+[learning_switch13.conf](learning_switch13.conf)
+に定義した．
+
+
 ##フローテーブル
 フローテーブルを確認すると，
 
