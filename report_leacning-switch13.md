@@ -1,23 +1,37 @@
 #Report: learning-switch13
-Submission: Oct./12/2016
-Branch:     develop
+<table>
+	<tr>
+		<td>Submission:</td>
+		<td>Oct./20/2016</td>
+	</tr>
+	<tr>
+		<td>Branch:</td>
+		<td>develop</td>
+	</tr>
+</table>
+
+
+
 
 
 
 ##提出者
-辻　健太
+<B>辻　健太</B>
 33E16012
 長谷川研究室 所属
 
 
 
 ## SDNの構造
-`trema.multi.conf`より，  
-SDNの構造はFig.1の通りになった．  
-
-|<img src="img/NetworkStructure.png" width="500px">|  
-|:------------------------------------------------:|  
-|                     Fig.1                        |  
+`trema.multi.conf`より，SDNの構造はFig.1の通りになった．
+<table>
+	<tr>
+		<td><img src="img/NetworkStructure.png" width="500px"><td>
+	</tr>
+	<tr>
+		<td>Fig.1</td>
+	</tr>
+</table>
 
 
 
