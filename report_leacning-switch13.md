@@ -19,8 +19,8 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
 [lib/learning_switch13.rb](lib/learning_switch13.rb)
 より，下記２つのフローテーブルが設定されていることがわかった．
 
-<table　align="center">
-  <center><caption>INGRESS_FILTERING_TABLE</caption><center>
+<table>
+  <center><caption>INGRESS_FILTERING_TABLE</caption><
   <tr>
     <td>優先度</td>
     <td>メソッド名</td>
