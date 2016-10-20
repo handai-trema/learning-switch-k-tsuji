@@ -1,6 +1,6 @@
 #Report: learning-switch13
-Submission: Oct./20/2016
-Branch:     develop
+<p>Submission: &nbsp; Oct./20/2016<p>
+<p>Branch: &nbsp; develop</p>
 
 
 
@@ -8,9 +8,9 @@ Branch:     develop
 
 
 ##提出者
-<p>辻　健太</p>
-<p>33E16012</p>
-<p>長谷川研究室 所属</p>
+<B>辻　健太<B><br>
+33E16012<br>
+長谷川研究室 所属<br>
 
 
 
