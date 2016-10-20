@@ -30,12 +30,12 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
   <tr>
     <td>2</td>
     <td>add_ipv6_multicast_mac_drop_flow_entry</td>
-    <td>宛先MACアドレスが`01:00:00:00:00:00/ff:00:00:00:00:00`であればdropする．</td>
+    <td>宛先MACアドレスが01:00:00:00:00:00/ff:00:00:00:00:00であればdropする．</td>
   </tr>
   <tr>
     <td>2</td>
     <td>add_multicast_mac_drop_flow_entry</td>
-    <td>宛先MACアドレスが`33:33:00:00:00:00/ff:ff:00:00:00:00`であればdropする．</td>
+    <td>宛先MACアドレスが33:33:00:00:00:00/ff:ff:00:00:00:00であればdropする．</td>
   </tr>
   <tr>
     <td>1</td>
@@ -54,18 +54,18 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
   <tr>
     <td>3</td>
     <td>add_default_broadcast_flow_entry</td>
-    <td>宛先MACアドレスが`ff:ff:ff:ff:ff:ff`であればフラッディングする．</td>
+    <td>宛先MACアドレスがff:ff:ff:ff:ff:ffであればフラッディングする．</td>
   </tr>
   <tr>
     <td>1</td>
     <td>add_default_flooding_flow_entry</td>
-    <td>その他はコントローラに出力ポートを問い合わせる．</td>
+    <td>その他はコントローラへパケットを送る．</td>
   </tr>
 </table>
 
 
-
-
+##フローテーブル
+フローテーブルを確認すると，
 
 
 ##関連リンク
