@@ -1,0 +1,11 @@
+ensyuu2@ensyuu2-VirtualBox:~/workspace4github/learning-switch-k-tsuji$ trema send_packets --source sender --dest receiver1
+ensyuu2@ensyuu2-VirtualBox:~/workspace4github/learning-switch-k-tsuji$ trema send_packets --source sender --dest receiver2
+ensyuu2@ensyuu2-VirtualBox:~/workspace4github/learning-switch-k-tsuji$ trema send_packets --source sender --dest receiver3
+ensyuu2@ensyuu2-VirtualBox:~/workspace4github/learning-switch-k-tsuji$ trema send_packets --source sender --dest receiver4
+ensyuu2@ensyuu2-VirtualBox:~/workspace4github/learning-switch-k-tsuji$ trema dump_flows lsw
+cookie=0x0, duration=43.75s, table=0, n_packets=1, n_bytes=42, priority=2,dl_dst=01:00:00:00:00:00/ff:00:00:00:00:00 actions=drop
+cookie=0x0, duration=43.713s, table=0, n_packets=198, n_bytes=34346, priority=2,dl_dst=33:33:00:00:00:00/ff:ff:00:00:00:00 actions=drop
+cookie=0x0, duration=43.713s, table=0, n_packets=32, n_bytes=10344, priority=1 actions=goto_table:1
+cookie=0x0, duration=43.713s, table=1, n_packets=31, n_bytes=10302, priority=3,dl_dst=ff:ff:ff:ff:ff:ff actions=FLOOD
+cookie=0x0, duration=43.713s, table=1, n_packets=1, n_bytes=42, priority=1 actions=CONTROLLER:65535
+
