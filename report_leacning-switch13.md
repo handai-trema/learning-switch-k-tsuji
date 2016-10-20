@@ -1,14 +1,6 @@
 #Report: learning-switch13
-<table border="0">
-	<tr>
-		<td>Submission:</td>
-		<td>Oct./20/2016</td>
-	</tr>
-	<tr>
-		<td>Branch:</td>
-		<td>develop</td>
-	</tr>
-</table>
+Submission: Oct./20/2016
+Branch:     develop
 
 
 
@@ -16,9 +8,10 @@
 
 
 ##提出者
-辻　健太
-33E16012
-長谷川研究室 所属
+<p>辻　健太</p>
+<p>33E16012</p>
+<p>長谷川研究室 所属</p>
+
 
 
 
