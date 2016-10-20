@@ -132,5 +132,6 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
 
 
 ##関連リンク
+* [課題 (マルチプルテーブルを読む)](https://github.com/handai-trema/deck/blob/develop/week3/assignment_learning_switch13.md)
 * [lib/learning_switch13.rb](lib/learning_switch13.rb)
 * [learning_switch13.conf](learning_switch13.conf)
