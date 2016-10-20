@@ -68,9 +68,9 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
 
 
 ##構造
-<p>今回は，独自の構造を
+今回は，独自の構造を
 [learning_switch13.conf](learning_switch13.conf)
-に定義した．</p>
+に定義した．
 <p>概略的に説明すると，送信機（`sender`）が１台とフローテーブルのそれぞれの条件を満たす受信機（`recever`）が５台が１台のスイッチ`lsw`に接続されている．</p>
 
 
@@ -119,4 +119,4 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
 
 ##関連リンク
 * [lib/learning_switch13.rb](lib/learning_switch13.rb)
-* [learning_switch13.conf](https://github.com/handai-trema/learning-switch-k-tsuji/blob/develop/learning_switch13.conf)
+* [learning_switch13.conf](learning_switch13.conf)
