@@ -79,33 +79,44 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
 
 
 ##フローテーブル
-<p>フローテーブルを確認し，対応するメソッド名およびと共に実行順に下表にまとめた．</p>
+<p>フローテーブルを確認し，処理内容および対応するメソッド名を処理順に並べ，下表にまとめた．</p>
 
 <table>
   <caption>実際のルールと対応するメソッド名</caption>
   <tr>
-    <td>実行順</td>
+    <td>処理順</td>
     <td>メソッド名</td>
+    <td>処理内容</td>
     <td>ルール</td>
   </tr>
   <tr>
+    <td>1</td>
     <td>add_ipv6_multicast_mac_drop_flow_entry</td>
+    <td>宛先MACアドレスが01:00:00:00:00:00/ff:00:00:00:00:00であればdropする．</td>
     <td>cookie=0x0, duration=43.75s, table=0, n_packets=1, n_bytes=42, priority=2,dl_dst=01:00:00:00:00:00/ff:00:00:00:00:00 actions=drop</td>
   </tr>
   <tr>
+    <td>2</td>
     <td>add_multicast_mac_drop_flow_entry</td>
+    <td>宛先MACアドレスが33:33:00:00:00:00/ff:ff:00:00:00:00であればdropする．</td>
     <td>cookie=0x0, duration=43.713s, table=0, n_packets=198, n_bytes=34346, priority=2,dl_dst=33:33:00:00:00:00/ff:ff:00:00:00:00 actions=drop</td>
   </tr>
   <tr>
+    <td>3</td>
     <td>add_default_forwarding_flow_entry</td>
+    <td>その他はFORWARDING_TABLEへ．</td>
     <td>cookie=0x0, duration=43.713s, table=0, n_packets=32, n_bytes=10344, priority=1 actions=goto_table:1</td>
   </tr>
   <tr>
+    <td>4</td>
     <td>add_default_broadcast_flow_entry</td>
+    <td>宛先MACアドレスがff:ff:ff:ff:ff:ffであればフラッディングする．</td>
     <td>cookie=0x0, duration=43.713s, table=1, n_packets=31, n_bytes=10302, priority=3,dl_dst=ff:ff:ff:ff:ff:ff actions=FLOOD</td>
   </tr>
   <tr>
+    <td>5</td>
     <td>add_default_flooding_flow_entry</td>
+    <td>その他はコントローラへパケットを送る．</td>
     <td>cookie=0x0, duration=43.713s, table=1, n_packets=1, n_bytes=42, priority=1 actions=CONTROLLER:65535</td>
   </tr>
 </table>
