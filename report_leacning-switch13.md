@@ -78,16 +78,16 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
 
 
 
-##フローテーブル
-<p>フローテーブルを確認し，処理内容および対応するメソッド名を処理順に並べ，下表にまとめた．</p>
+##フローテーブルと処理の流れ
+<p>フローテーブルを確認し，処理内容および対応するメソッド名をパケット受信からのステップ順に並べ，下表にまとめた．</p>
 
 <table>
   <caption>実際のルールと対応するメソッド名</caption>
   <tr>
-    <td>処理順</td>
+    <td>ステップ順</td>
     <td>メソッド名</td>
     <td>処理内容</td>
-    <td>ルール</td>
+    <td>フォワーディングテーブル内の実際のルール</td>
   </tr>
   <tr>
     <td>1</td>
@@ -104,7 +104,10 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
   <tr>
     <td>3</td>
     <td>add_default_forwarding_flow_entry</td>
-    <td>その他はFORWARDING_TABLEへ．</td>
+    <td>
+    その他はFORWARDING_TABLEへ．
+    （この表ではステップ４へ）
+    </td>
     <td>cookie=0x0, duration=43.713s, table=0, n_packets=32, n_bytes=10344, priority=1 actions=goto_table:1</td>
   </tr>
   <tr>
