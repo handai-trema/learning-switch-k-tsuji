@@ -65,14 +65,24 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
 
 
 ##構造
-今回は，独自の構造を
+<p>今回は，独自の構造を
 [learning_switch13.conf](learning_switch13.conf)
-に定義した．
+に定義した．</p>
+<p>概略的に説明すると，送信機（`sender`）が１台とフローテーブルのそれぞれの条件を満たす受信機（`recever`）が５台が１台のスイッチ`lsw`に接続されている．</p>
+
 
 
 ##フローテーブル
-フローテーブルを確認すると，
+<p>フローテーブルを確認し，下表の通りに解釈した．</p>
+<p>やはり，想定通りであった．</p>
 
+```
+cookie=0x0, duration=43.75s, table=0, n_packets=1, n_bytes=42, priority=2,dl_dst=01:00:00:00:00:00/ff:00:00:00:00:00 actions=drop
+cookie=0x0, duration=43.713s, table=0, n_packets=198, n_bytes=34346, priority=2,dl_dst=33:33:00:00:00:00/ff:ff:00:00:00:00 actions=drop
+cookie=0x0, duration=43.713s, table=0, n_packets=32, n_bytes=10344, priority=1 actions=goto_table:1
+cookie=0x0, duration=43.713s, table=1, n_packets=31, n_bytes=10302, priority=3,dl_dst=ff:ff:ff:ff:ff:ff actions=FLOOD
+cookie=0x0, duration=43.713s, table=1, n_packets=1, n_bytes=42, priority=1 actions=CONTROLLER:65535
+```
 
 ##関連リンク
 * [lib/learning_switch13.rb](lib/learning_switch13.rb)
