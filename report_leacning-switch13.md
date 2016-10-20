@@ -79,11 +79,12 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
 
 
 ##フローテーブル
-<p>フローテーブルを確認し，対応するメソッド名と共に下表にまとめた．</p>
-<p>やはり，想定通りであった．</p>
+<p>フローテーブルを確認し，対応するメソッド名およびと共に実行順に下表にまとめた．</p>
 
 <table>
+  <caption>実際のルールと対応するメソッド名</caption>
   <tr>
+    <td>実行順</td>
     <td>メソッド名</td>
     <td>ルール</td>
   </tr>
@@ -109,5 +110,13 @@ Branch: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; develop<br>
   </tr>
 </table>
 
+
+
+
+
+
+
+
 ##関連リンク
 * [lib/learning_switch13.rb](lib/learning_switch13.rb)
+* [learning_switch13.conf](https://github.com/handai-trema/learning-switch-k-tsuji/blob/develop/learning_switch13.conf)
